@@ -1,4 +1,4 @@
-package br.com.herlandio7clientservice.application;
+package br.com.herlandio7clientservice.application.representation;
 
 import br.com.herlandio7clientservice.domain.Client;
 import lombok.Data;

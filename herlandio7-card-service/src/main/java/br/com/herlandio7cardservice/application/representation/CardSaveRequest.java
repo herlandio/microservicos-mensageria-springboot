@@ -1,4 +1,4 @@
-package br.com.herlandio7cardservice.application;
+package br.com.herlandio7cardservice.application.representation;
 
 import java.math.BigDecimal;
 

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import br.com.herlandio7clientservice.application.representation.ClientSaveRequest;
 import br.com.herlandio7clientservice.domain.Client;
 import lombok.RequiredArgsConstructor;
 
