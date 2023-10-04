@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: herlandio7-cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #habilita localizar serviço
+          lower-case-service-id: true #localiza se estiver caixa baixa
+server:
+  port: 8080
+
+eureka:
+  client:
+    fetch-registry: true #busca registro
+    register-with-eureka: true #registra com eureka
+    service-url:
+      defaultZone: http://localhost:8761/eureka #rota do eureka
