@@ -26,6 +26,16 @@
             "projectName": "herlandio7-client-service",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Herlandio7CloudGatewayApplication<herlandio7-cloud-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.herlandio7cloudgateway.Herlandio7CloudGatewayApplication",
+            "projectName": "herlandio7-cloud-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
