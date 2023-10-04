@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: herlandio7-eureka-server
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false #não se registrar com eureka
+    fetch-registry: false #para não registar automaticamente, quem fara é o gateway
