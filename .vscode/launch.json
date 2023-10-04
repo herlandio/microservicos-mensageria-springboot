@@ -16,6 +16,16 @@
             "args": "",
             "envFile": "${workspaceFolder}/.env",
             "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=63869 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=herlandio7-eureka-server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Herlandio7ClientServiceApplication<herlandio7-client-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.herlandio7clientservice.Herlandio7ClientServiceApplication",
+            "projectName": "herlandio7-client-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
