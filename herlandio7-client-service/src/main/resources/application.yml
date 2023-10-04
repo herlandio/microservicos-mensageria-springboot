@@ -2,7 +2,7 @@ spring:
   application:
     name: herlandio7-client-service
 server:
-  port: 0
+  port: 0 #sobe em porta aleatoria
 eureka:
   client:
     service-url:
