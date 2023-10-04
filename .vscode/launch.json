@@ -2,13 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Herlandio7ClientServiceApplication",
+            "request": "launch",
+            "mainClass": "br.com.herlandio7clientservice.Herlandio7ClientServiceApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-Herlandio7EurekaServerApplication<herlandio7-eureka-server>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "mainClass": "br.com.herlandio7eurekaserver.Herlandio7EurekaServerApplication",
             "projectName": "herlandio7-eureka-server",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=63869 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=herlandio7-eureka-server"
         }
     ]
 }
