@@ -20,7 +20,7 @@ public class Herlandio7CloudGatewayApplication {
 		return builder
 				.routes()
 				.route(r -> r.path("/clients/**").uri("lb://herlandio7-client-service")) // pegar nome no
-																							// application.yml
+				.route(r -> r.path("/cards/**").uri("lb://herlandio7-card-service")) // application.yml
 				.build();
 	}
 

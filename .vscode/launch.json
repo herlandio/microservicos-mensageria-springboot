@@ -25,7 +25,8 @@
             "mainClass": "br.com.herlandio7clientservice.Herlandio7ClientServiceApplication",
             "projectName": "herlandio7-client-service",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57737 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=herlandio7-client-service"
         },
         {
             "type": "java",
@@ -34,6 +35,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "br.com.herlandio7cloudgateway.Herlandio7CloudGatewayApplication",
             "projectName": "herlandio7-cloud-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Herlandio7CardServiceApplication<herlandio7-card-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.herlandio7cardservice.Herlandio7CardServiceApplication",
+            "projectName": "herlandio7-card-service",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
