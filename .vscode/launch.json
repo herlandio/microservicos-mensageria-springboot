@@ -47,6 +47,16 @@
             "projectName": "herlandio7-card-service",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Herlandio7CreditAssessorServiceApplication<herlandio7-credit-assessor-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.herlandio7creditassessorservice.Herlandio7CreditAssessorServiceApplication",
+            "projectName": "herlandio7-credit-assessor-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
