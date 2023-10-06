@@ -7,6 +7,12 @@ spring:
         locator:
           enabled: true #habilita localizar serviço
           lower-case-service-id: true #localiza se estiver caixa baixa
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/herlandio7-realm
+          
 server:
   port: 8080
 
@@ -15,4 +21,4 @@ eureka:
     fetch-registry: true #busca registro
     register-with-eureka: true #registra com eureka
     service-url:
-      defaultZone: http://localhost:8761/eureka #rota do eureka
+      defaultZone: http://eureka-user:123@localhost:8761/eureka #rota do eureka

@@ -1,6 +1,10 @@
 spring:
   application:
     name: herlandio7-eureka-server
+  security: #autenticação para logar no eureka
+    user:
+      name: eureka-user
+      password: 123
 server:
   port: 8761
 eureka:

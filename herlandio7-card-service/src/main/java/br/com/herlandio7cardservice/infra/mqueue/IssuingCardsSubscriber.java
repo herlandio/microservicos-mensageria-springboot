@@ -13,9 +13,11 @@ import br.com.herlandio7cardservice.domain.CardIssuanceRequest;
 import br.com.herlandio7cardservice.infra.repository.CardClientRepository;
 import br.com.herlandio7cardservice.infra.repository.CardRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @Component // gerenciado pelo spring
 @RequiredArgsConstructor
+@Slf4j
 public class IssuingCardsSubscriber {
 
     private final CardRepository cardRepository;
@@ -33,7 +35,7 @@ public class IssuingCardsSubscriber {
             client.setLimitReleased(cardIssuanceRequest.getLimitReleased());
             cardClientRepository.save(client);
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("Error when receiving card issue request: {}", e.getMessage());
         }
     }
 }
