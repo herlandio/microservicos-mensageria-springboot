@@ -1,0 +1,101 @@
+2023-10-06T16:51:26.807-03:00  INFO 32352 --- [restartedMain] b.c.h.Herlandio7ClientServiceApplication : Starting Herlandio7ClientServiceApplication using Java 17.0.7 with PID 32352 (C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\herlandio7-client-service\target\classes started by STDAY in C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\herlandio7-client-service)
+2023-10-06T16:51:26.808-03:00  INFO 32352 --- [restartedMain] b.c.h.Herlandio7ClientServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T16:51:27.089-03:00  INFO 32352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T16:51:27.102-03:00  INFO 32352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2023-10-06T16:51:27.180-03:00  INFO 32352 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=542f8a73-1f40-37a6-8fc0-e29efd5ea6d6
+2023-10-06T16:51:27.254-03:00  INFO 32352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-10-06T16:51:27.254-03:00  INFO 32352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-06T16:51:27.255-03:00  INFO 32352 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06T16:51:27.293-03:00  INFO 32352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-06T16:51:27.294-03:00  INFO 32352 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 482 ms
+2023-10-06T16:51:27.307-03:00  INFO 32352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-10-06T16:51:27.310-03:00  INFO 32352 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:c0e7cd76-59bb-4c18-a1b2-10e3e115b8a3 user=SA
+2023-10-06T16:51:27.311-03:00  INFO 32352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-10-06T16:51:27.312-03:00  INFO 32352 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c0e7cd76-59bb-4c18-a1b2-10e3e115b8a3'
+2023-10-06T16:51:27.342-03:00  INFO 32352 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T16:51:27.352-03:00  INFO 32352 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T16:51:27.353-03:00  INFO 32352 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T16:51:27.362-03:00  INFO 32352 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T16:51:27.386-03:00  INFO 32352 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T16:51:27.393-03:00  INFO 32352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T16:51:27.514-03:00  WARN 32352 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T16:51:27.669-03:00  WARN 32352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-06T16:51:27.866-03:00  INFO 32352 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-06T16:51:28.032-03:00  WARN 32352 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-06T16:51:28.058-03:00  INFO 32352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54583 (http) with context path ''
+2023-10-06T16:51:28.059-03:00  INFO 32352 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 54583
+2023-10-06T16:51:28.060-03:00  INFO 32352 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-06T16:51:28.066-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-10-06T16:51:28.067-03:00  INFO 32352 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-06T16:51:28.070-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-06T16:51:28.070-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-06T16:51:28.071-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-06T16:51:28.071-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-06T16:51:28.071-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-06T16:51:28.072-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-10-06T16:51:28.072-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-06T16:51:28.186-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-06T16:51:28.188-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-10-06T16:51:28.189-03:00  INFO 32352 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-10-06T16:51:28.191-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696621888191 with initial instances count: 6
+2023-10-06T16:51:28.193-03:00  INFO 32352 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HERLANDIO7-CLIENT-SERVICE with eureka with status UP
+2023-10-06T16:51:28.194-03:00  INFO 32352 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696621888194, current=UP, previous=STARTING]
+2023-10-06T16:51:28.194-03:00  INFO 32352 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CLIENT-SERVICE/herlandio7-client-service:d6a738e4d79dce84a8864f9df9fc8c69: registering service...
+2023-10-06T16:51:28.287-03:00  INFO 32352 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CLIENT-SERVICE/herlandio7-client-service:d6a738e4d79dce84a8864f9df9fc8c69 - registration status: 204
+2023-10-06T16:51:28.374-03:00  INFO 32352 --- [restartedMain] b.c.h.Herlandio7ClientServiceApplication : Started Herlandio7ClientServiceApplication in 1.757 seconds (process running for 288.729)
+2023-10-06T16:51:28.376-03:00  INFO 32352 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-06T16:51:46.876-03:00  INFO 32352 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-06T16:52:35.999-03:00  INFO 26008 --- [restartedMain] b.c.h.Herlandio7ClientServiceApplication : Starting Herlandio7ClientServiceApplication using Java 17.0.7 with PID 26008 (C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\herlandio7-client-service\target\classes started by STDAY in C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\herlandio7-client-service)
+2023-10-06T16:52:36.003-03:00  INFO 26008 --- [restartedMain] b.c.h.Herlandio7ClientServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2023-10-06T16:52:36.102-03:00  INFO 26008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-06T16:52:36.103-03:00  INFO 26008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-06T16:52:38.231-03:00  INFO 26008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-06T16:52:38.446-03:00  INFO 26008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 198 ms. Found 1 JPA repository interfaces.
+2023-10-06T16:52:39.074-03:00  INFO 26008 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=daf53bf2-f1af-310d-bde7-fe48858b3833
+2023-10-06T16:52:40.263-03:00  INFO 26008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-10-06T16:52:40.292-03:00  INFO 26008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-06T16:52:40.294-03:00  INFO 26008 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-06T16:52:40.605-03:00  INFO 26008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-06T16:52:40.607-03:00  INFO 26008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4502 ms
+2023-10-06T16:52:40.888-03:00  INFO 26008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-06T16:52:41.270-03:00  INFO 26008 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:4c9d7cfb-6549-4198-be07-f6146ad0081d user=SA
+2023-10-06T16:52:41.285-03:00  INFO 26008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-06T16:52:41.321-03:00  INFO 26008 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:4c9d7cfb-6549-4198-be07-f6146ad0081d'
+2023-10-06T16:52:41.752-03:00  INFO 26008 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-06T16:52:41.859-03:00  INFO 26008 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-06T16:52:41.864-03:00  INFO 26008 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-06T16:52:42.138-03:00  INFO 26008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T16:52:42.387-03:00  INFO 26008 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-06T16:52:42.888-03:00  INFO 26008 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-06T16:52:44.124-03:00  INFO 26008 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-06T16:52:44.241-03:00  INFO 26008 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-06T16:52:46.902-03:00  WARN 26008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-06T16:52:50.781-03:00  WARN 26008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-06T16:52:52.491-03:00  INFO 26008 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-06T16:52:52.905-03:00  WARN 26008 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-06T16:52:52.927-03:00  INFO 26008 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-10-06T16:52:53.654-03:00  INFO 26008 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-06T16:52:53.660-03:00  INFO 26008 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-06T16:52:53.668-03:00  INFO 26008 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-10-06T16:52:53.870-03:00  INFO 26008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54616 (http) with context path ''
+2023-10-06T16:52:53.883-03:00  INFO 26008 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 54616
+2023-10-06T16:52:53.899-03:00  INFO 26008 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-06T16:52:54.114-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-10-06T16:52:54.128-03:00  INFO 26008 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-06T16:52:54.241-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-06T16:52:54.245-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-06T16:52:54.246-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-06T16:52:54.251-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-06T16:52:54.257-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-06T16:52:54.280-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-10-06T16:52:54.294-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-06T16:52:55.250-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-06T16:52:55.258-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-10-06T16:52:55.264-03:00  INFO 26008 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-10-06T16:52:55.273-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696621975272 with initial instances count: 6
+2023-10-06T16:52:55.278-03:00  INFO 26008 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HERLANDIO7-CLIENT-SERVICE with eureka with status UP
+2023-10-06T16:52:55.279-03:00  INFO 26008 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696621975279, current=UP, previous=STARTING]
+2023-10-06T16:52:55.283-03:00  INFO 26008 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CLIENT-SERVICE/herlandio7-client-service:e3f4ba023f9a5b71d38052dea4b47fdf: registering service...
+2023-10-06T16:52:55.408-03:00  INFO 26008 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CLIENT-SERVICE/herlandio7-client-service:e3f4ba023f9a5b71d38052dea4b47fdf - registration status: 204
+2023-10-06T16:52:55.512-03:00  INFO 26008 --- [restartedMain] b.c.h.Herlandio7ClientServiceApplication : Started Herlandio7ClientServiceApplication in 20.244 seconds (process running for 21.144)
+2023-10-06T16:55:56.435-03:00  INFO 26008 --- [http-nio-auto-1-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 183 ms

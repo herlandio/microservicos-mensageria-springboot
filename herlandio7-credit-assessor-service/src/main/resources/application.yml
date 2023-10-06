@@ -17,3 +17,12 @@ eureka:
 mq:
   queues:
     issuing-cards: issuing-cards
+    
+management: # expondo todos os endpoints do actuator
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  file:
+    name: ./logs/logs-file.log
