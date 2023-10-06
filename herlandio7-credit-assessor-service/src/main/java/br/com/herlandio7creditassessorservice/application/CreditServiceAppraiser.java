@@ -2,6 +2,7 @@ package br.com.herlandio7creditassessorservice.application;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.http.HttpStatus;
@@ -10,14 +11,18 @@ import org.springframework.stereotype.Service;
 
 import br.com.herlandio7creditassessorservice.application.exception.DataClientNotFoundException;
 import br.com.herlandio7creditassessorservice.application.exception.ErrorComunicationMicroservicesException;
+import br.com.herlandio7creditassessorservice.application.exception.ErrorRequestCard;
 import br.com.herlandio7creditassessorservice.domain.model.ApprovedCard;
 import br.com.herlandio7creditassessorservice.domain.model.Card;
 import br.com.herlandio7creditassessorservice.domain.model.CardClient;
+import br.com.herlandio7creditassessorservice.domain.model.CardIssuanceRequest;
 import br.com.herlandio7creditassessorservice.domain.model.CustomerSituation;
 import br.com.herlandio7creditassessorservice.domain.model.DataClient;
 import br.com.herlandio7creditassessorservice.domain.model.FeedbackCustomerEvaluation;
+import br.com.herlandio7creditassessorservice.domain.model.RequestProtocolCard;
 import br.com.herlandio7creditassessorservice.infra.clients.CardResourceClient;
 import br.com.herlandio7creditassessorservice.infra.clients.ClientResourceClient;
+import br.com.herlandio7creditassessorservice.infra.mqueue.IssuingCardsPublisher;
 import feign.FeignException;
 import lombok.RequiredArgsConstructor;
 
@@ -27,6 +32,7 @@ public class CreditServiceAppraiser {
 
     private final ClientResourceClient clients;
     private final CardResourceClient cards;
+    private final IssuingCardsPublisher issuingCardsPublisher;
 
     public CustomerSituation getCustomerSituation(String cpf)
             throws DataClientNotFoundException, ErrorComunicationMicroservicesException {
@@ -83,6 +89,16 @@ public class CreditServiceAppraiser {
                 throw new DataClientNotFoundException();
             }
             throw new ErrorComunicationMicroservicesException(e.getMessage(), status);
+        }
+    }
+
+    public RequestProtocolCard requestCardIssuance(CardIssuanceRequest data) {
+        try {
+            issuingCardsPublisher.requestCard(data);
+            var protocol = UUID.randomUUID().toString();
+            return new RequestProtocolCard(protocol);
+        } catch (Exception e) {
+            throw new ErrorRequestCard(e.getMessage());
         }
     }
 }

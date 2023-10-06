@@ -23,6 +23,6 @@ public class CardClient {
     @ManyToOne
     @JoinColumn(name = "id_card")
     private Card card;
-    private BigDecimal limitBasic;
+    private BigDecimal limitReleased;
 
 }

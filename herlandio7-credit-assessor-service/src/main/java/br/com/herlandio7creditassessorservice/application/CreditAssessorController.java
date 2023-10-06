@@ -11,9 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.herlandio7creditassessorservice.application.exception.DataClientNotFoundException;
 import br.com.herlandio7creditassessorservice.application.exception.ErrorComunicationMicroservicesException;
+import br.com.herlandio7creditassessorservice.application.exception.ErrorRequestCard;
+import br.com.herlandio7creditassessorservice.domain.model.CardIssuanceRequest;
 import br.com.herlandio7creditassessorservice.domain.model.CustomerSituation;
 import br.com.herlandio7creditassessorservice.domain.model.EvaluationData;
 import br.com.herlandio7creditassessorservice.domain.model.FeedbackCustomerEvaluation;
+import br.com.herlandio7creditassessorservice.domain.model.RequestProtocolCard;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -45,6 +48,16 @@ public class CreditAssessorController {
             return ResponseEntity.notFound().build();
         } catch (ErrorComunicationMicroservicesException e) {
             return ResponseEntity.status(HttpStatus.resolve(e.getStatus())).body(e.getMessage());
+        }
+    }
+
+    @PostMapping("request-cards")
+    public ResponseEntity requestCard(@RequestBody CardIssuanceRequest cardIssuanceRequest) {
+        try {
+            RequestProtocolCard requestProtocolCard = creditService.requestCardIssuance(cardIssuanceRequest);
+            return ResponseEntity.ok(requestProtocolCard);
+        } catch (ErrorRequestCard e) {
+            return ResponseEntity.internalServerError().body(e.getMessage());
         }
     }
 }

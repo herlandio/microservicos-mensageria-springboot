@@ -13,12 +13,12 @@ import lombok.NoArgsConstructor;
 public class CardsPerCustomerResponse {
     private String name;
     private String flag;
-    private BigDecimal limit;
+    private BigDecimal limitReleased;
 
     public static CardsPerCustomerResponse fromModel(CardClient model) {
         return new CardsPerCustomerResponse(
                 model.getCard().getName(),
                 model.getCard().getFlag().toString(),
-                model.getLimitBasic());
+                model.getLimitReleased());
     }
 }
