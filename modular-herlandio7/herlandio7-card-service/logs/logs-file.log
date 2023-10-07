@@ -60,3 +60,56 @@
 2023-10-07T20:13:35.086-03:00  INFO 12012 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-10-07T20:13:35.092-03:00  INFO 12012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-10-07T20:13:35.095-03:00  INFO 12012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T20:36:26.246-03:00  INFO 15444 --- [restartedMain] b.c.h.Herlandio7CardServiceApplication   : Starting Herlandio7CardServiceApplication using Java 17.0.7 with PID 15444 (C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\modular-herlandio7\herlandio7-card-service\target\classes started by STDAY in C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\modular-herlandio7\herlandio7-card-service)
+2023-10-07T20:36:26.250-03:00  INFO 15444 --- [restartedMain] b.c.h.Herlandio7CardServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T20:36:26.315-03:00  INFO 15444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-07T20:36:26.316-03:00  INFO 15444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-07T20:36:27.246-03:00  INFO 15444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T20:36:27.375-03:00  INFO 15444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 2 JPA repository interfaces.
+2023-10-07T20:36:27.582-03:00  INFO 15444 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b01eb1a4-dd14-394d-ae98-c0b7d99426e3
+2023-10-07T20:36:28.130-03:00  INFO 15444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-10-07T20:36:28.138-03:00  INFO 15444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T20:36:28.139-03:00  INFO 15444 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T20:36:28.215-03:00  INFO 15444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T20:36:28.216-03:00  INFO 15444 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1898 ms
+2023-10-07T20:36:28.312-03:00  INFO 15444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T20:36:28.505-03:00  INFO 15444 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cf1349ad-803f-4128-9de0-ad3d7361d476 user=SA
+2023-10-07T20:36:28.508-03:00  INFO 15444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T20:36:28.518-03:00  INFO 15444 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cf1349ad-803f-4128-9de0-ad3d7361d476'
+2023-10-07T20:36:28.721-03:00  INFO 15444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T20:36:28.767-03:00  INFO 15444 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T20:36:28.770-03:00  INFO 15444 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T20:36:28.888-03:00  INFO 15444 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T20:36:28.998-03:00  INFO 15444 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T20:36:29.187-03:00  INFO 15444 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T20:36:29.683-03:00  INFO 15444 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T20:36:29.731-03:00  INFO 15444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T20:36:30.104-03:00  WARN 15444 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-07T20:36:30.863-03:00  WARN 15444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-07T20:36:30.990-03:00  INFO 15444 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-07T20:36:31.035-03:00  WARN 15444 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-07T20:36:31.043-03:00  INFO 15444 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-10-07T20:36:31.161-03:00  INFO 15444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55985 (http) with context path ''
+2023-10-07T20:36:31.163-03:00  INFO 15444 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55985
+2023-10-07T20:36:31.168-03:00  INFO 15444 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-07T20:36:31.230-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-10-07T20:36:31.234-03:00  INFO 15444 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-07T20:36:31.252-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-07T20:36:31.253-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-07T20:36:31.253-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-07T20:36:31.253-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-07T20:36:31.254-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-07T20:36:31.254-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-10-07T20:36:31.255-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-07T20:36:31.543-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-07T20:36:31.546-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-10-07T20:36:31.548-03:00  INFO 15444 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-10-07T20:36:31.553-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696721791552 with initial instances count: 1
+2023-10-07T20:36:31.557-03:00  INFO 15444 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HERLANDIO7-CARD-SERVICE with eureka with status UP
+2023-10-07T20:36:31.558-03:00  INFO 15444 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696721791558, current=UP, previous=STARTING]
+2023-10-07T20:36:31.561-03:00  INFO 15444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CARD-SERVICE/herlandio7-card-service:3e030bdeb74e433c9ac26eb4a5d1ea30: registering service...
+2023-10-07T20:36:31.680-03:00  INFO 15444 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2023-10-07T20:36:31.681-03:00  INFO 15444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CARD-SERVICE/herlandio7-card-service:3e030bdeb74e433c9ac26eb4a5d1ea30 - registration status: 204
+2023-10-07T20:36:31.749-03:00  INFO 15444 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#69a1a855:0/SimpleConnection@570803f [delegate=amqp://guest@127.0.0.1:5672/, localPort=55988]
+2023-10-07T20:36:31.812-03:00  INFO 15444 --- [restartedMain] b.c.h.Herlandio7CardServiceApplication   : Started Herlandio7CardServiceApplication in 6.075 seconds (process running for 6.601)
+2023-10-07T20:41:31.257-03:00  INFO 15444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

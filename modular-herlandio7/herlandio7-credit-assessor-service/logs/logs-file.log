@@ -1,82 +1,40 @@
-2023-10-06T16:51:43.155-03:00  INFO 31828 --- [restartedMain] rlandio7CreditAssessorServiceApplication : Starting Herlandio7CreditAssessorServiceApplication using Java 17.0.7 with PID 31828 (C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\herlandio7-credit-assessor-service\target\classes started by STDAY in C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\herlandio7-credit-assessor-service)
-2023-10-06T16:51:43.156-03:00  INFO 31828 --- [restartedMain] rlandio7CreditAssessorServiceApplication : No active profile set, falling back to 1 default profile: "default"
-2023-10-06T16:51:43.441-03:00  INFO 31828 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f25e30de-eb2e-3517-86a9-fd617f6f447e
-2023-10-06T16:51:43.453-03:00  INFO 31828 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'br.com.herlandio7creditassessorservice.infra.clients.CardResourceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-10-06T16:51:43.455-03:00  INFO 31828 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'br.com.herlandio7creditassessorservice.infra.clients.ClientResourceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-10-06T16:51:43.523-03:00  INFO 31828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-10-06T16:51:43.525-03:00  INFO 31828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-10-06T16:51:43.525-03:00  INFO 31828 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-06T16:51:43.564-03:00  INFO 31828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-10-06T16:51:43.565-03:00  INFO 31828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 406 ms
-2023-10-06T16:51:43.642-03:00  INFO 31828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-10-06T16:51:43.662-03:00  INFO 31828 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'herlandio7-client-service' URL not provided. Will try picking an instance via load-balancing.
-2023-10-06T16:51:43.700-03:00  INFO 31828 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'herlandio7-card-service' URL not provided. Will try picking an instance via load-balancing.
-2023-10-06T16:51:44.085-03:00  INFO 31828 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-10-06T16:51:44.336-03:00  WARN 31828 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-10-06T16:51:44.390-03:00  WARN 31828 --- [restartedMain] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
-2023-10-06T16:51:44.444-03:00  INFO 31828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54588 (http) with context path ''
-2023-10-06T16:51:44.446-03:00  INFO 31828 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 54588
-2023-10-06T16:51:44.448-03:00  INFO 31828 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2023-10-06T16:51:44.464-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2023-10-06T16:51:44.465-03:00  INFO 31828 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-10-06T16:51:44.471-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2023-10-06T16:51:44.472-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2023-10-06T16:51:44.473-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2023-10-06T16:51:44.474-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2023-10-06T16:51:44.476-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2023-10-06T16:51:44.477-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2023-10-06T16:51:44.477-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2023-10-06T16:51:44.612-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2023-10-06T16:51:44.614-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2023-10-06T16:51:44.614-03:00  INFO 31828 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-10-06T16:51:44.616-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696621904616 with initial instances count: 6
-2023-10-06T16:51:44.617-03:00  INFO 31828 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HERLANDIO7-CREDIT-ASSESSOR-SERVICE with eureka with status UP
-2023-10-06T16:51:44.617-03:00  INFO 31828 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696621904617, current=UP, previous=STARTING]
-2023-10-06T16:51:44.617-03:00  INFO 31828 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CREDIT-ASSESSOR-SERVICE/herlandio7-credit-assessor-service:1ad0b59b7124fc13c1e2454db449dd7d: registering service...
-2023-10-06T16:51:44.705-03:00  INFO 31828 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CREDIT-ASSESSOR-SERVICE/herlandio7-credit-assessor-service:1ad0b59b7124fc13c1e2454db449dd7d - registration status: 204
-2023-10-06T16:51:44.763-03:00  INFO 31828 --- [restartedMain] rlandio7CreditAssessorServiceApplication : Started Herlandio7CreditAssessorServiceApplication in 1.818 seconds (process running for 1839.144)
-2023-10-06T16:51:44.766-03:00  INFO 31828 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-10-06T16:52:40.364-03:00  INFO 29560 --- [restartedMain] rlandio7CreditAssessorServiceApplication : Starting Herlandio7CreditAssessorServiceApplication using Java 17.0.7 with PID 29560 (C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\herlandio7-credit-assessor-service\target\classes started by STDAY in C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\herlandio7-credit-assessor-service)
-2023-10-06T16:52:40.371-03:00  INFO 29560 --- [restartedMain] rlandio7CreditAssessorServiceApplication : No active profile set, falling back to 1 default profile: "default"
-2023-10-06T16:52:40.534-03:00  INFO 29560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-10-06T16:52:40.535-03:00  INFO 29560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-10-06T16:52:43.463-03:00  INFO 29560 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7fa16ab2-93c3-35c4-af50-0f5fc5e2b8f7
-2023-10-06T16:52:43.568-03:00  INFO 29560 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'br.com.herlandio7creditassessorservice.infra.clients.CardResourceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-10-06T16:52:43.572-03:00  INFO 29560 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'br.com.herlandio7creditassessorservice.infra.clients.ClientResourceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-10-06T16:52:44.889-03:00  INFO 29560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-10-06T16:52:44.929-03:00  INFO 29560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-10-06T16:52:44.935-03:00  INFO 29560 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-06T16:52:45.207-03:00  INFO 29560 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-10-06T16:52:45.209-03:00  INFO 29560 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4671 ms
-2023-10-06T16:52:46.788-03:00  INFO 29560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-10-06T16:52:46.865-03:00  INFO 29560 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'herlandio7-client-service' URL not provided. Will try picking an instance via load-balancing.
-2023-10-06T16:52:47.063-03:00  INFO 29560 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'herlandio7-card-service' URL not provided. Will try picking an instance via load-balancing.
-2023-10-06T16:52:51.085-03:00  INFO 29560 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-06T16:52:51.086-03:00  INFO 29560 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-10-06T16:52:51.392-03:00  INFO 29560 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-10-06T16:52:51.469-03:00  INFO 29560 --- [RMI TCP Connection(1)-127.0.0.1] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
-2023-10-06T16:52:51.612-03:00  WARN 29560 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-10-06T16:52:51.687-03:00  INFO 29560 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 600 ms
-2023-10-06T16:52:51.801-03:00  WARN 29560 --- [restartedMain] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
-2023-10-06T16:52:51.997-03:00  INFO 29560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54613 (http) with context path ''
-2023-10-06T16:52:52.007-03:00  INFO 29560 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 54613
-2023-10-06T16:52:52.022-03:00  INFO 29560 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2023-10-06T16:52:52.132-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2023-10-06T16:52:52.165-03:00  INFO 29560 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-10-06T16:52:52.220-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2023-10-06T16:52:52.221-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2023-10-06T16:52:52.223-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2023-10-06T16:52:52.224-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2023-10-06T16:52:52.227-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2023-10-06T16:52:52.235-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2023-10-06T16:52:52.240-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2023-10-06T16:52:53.098-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2023-10-06T16:52:53.110-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2023-10-06T16:52:53.117-03:00  INFO 29560 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-10-06T16:52:53.127-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696621973125 with initial instances count: 6
-2023-10-06T16:52:53.132-03:00  INFO 29560 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HERLANDIO7-CREDIT-ASSESSOR-SERVICE with eureka with status UP
-2023-10-06T16:52:53.134-03:00  INFO 29560 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696621973134, current=UP, previous=STARTING]
-2023-10-06T16:52:53.142-03:00  INFO 29560 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CREDIT-ASSESSOR-SERVICE/herlandio7-credit-assessor-service:3a36db1f198beb7591d787f65cb60eb5: registering service...
-2023-10-06T16:52:53.315-03:00  INFO 29560 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CREDIT-ASSESSOR-SERVICE/herlandio7-credit-assessor-service:3a36db1f198beb7591d787f65cb60eb5 - registration status: 204
-2023-10-06T16:52:54.453-03:00  INFO 29560 --- [restartedMain] rlandio7CreditAssessorServiceApplication : Started Herlandio7CreditAssessorServiceApplication in 15.216 seconds (process running for 16.583)
-2023-10-06T16:54:08.086-03:00  INFO 29560 --- [http-nio-auto-1-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 218 ms
+2023-10-07T20:37:08.183-03:00  INFO 28424 --- [restartedMain] rlandio7CreditAssessorServiceApplication : Starting Herlandio7CreditAssessorServiceApplication using Java 17.0.7 with PID 28424 (C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\modular-herlandio7\herlandio7-credit-assessor-service\target\classes started by STDAY in C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\modular-herlandio7\herlandio7-credit-assessor-service)
+2023-10-07T20:37:08.189-03:00  INFO 28424 --- [restartedMain] rlandio7CreditAssessorServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T20:37:08.256-03:00  INFO 28424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-07T20:37:08.257-03:00  INFO 28424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-07T20:37:09.343-03:00  INFO 28424 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d619eefd-b8e3-37b5-8df5-8741796f76f4
+2023-10-07T20:37:09.382-03:00  INFO 28424 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'br.com.herlandio7creditassessorservice.infra.clients.CardResourceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-10-07T20:37:09.385-03:00  INFO 28424 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'br.com.herlandio7creditassessorservice.infra.clients.ClientResourceClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-10-07T20:37:09.833-03:00  INFO 28424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-10-07T20:37:09.841-03:00  INFO 28424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T20:37:09.842-03:00  INFO 28424 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T20:37:09.909-03:00  INFO 28424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T20:37:09.910-03:00  INFO 28424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1652 ms
+2023-10-07T20:37:10.209-03:00  WARN 28424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-07T20:37:10.226-03:00  INFO 28424 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'herlandio7-client-service' URL not provided. Will try picking an instance via load-balancing.
+2023-10-07T20:37:10.282-03:00  INFO 28424 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'herlandio7-card-service' URL not provided. Will try picking an instance via load-balancing.
+2023-10-07T20:37:11.175-03:00  INFO 28424 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-07T20:37:11.198-03:00  WARN 28424 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-07T20:37:11.212-03:00  INFO 28424 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-10-07T20:37:11.277-03:00  INFO 28424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55992 (http) with context path ''
+2023-10-07T20:37:11.278-03:00  INFO 28424 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55992
+2023-10-07T20:37:11.282-03:00  INFO 28424 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-07T20:37:11.355-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-10-07T20:37:11.360-03:00  INFO 28424 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-07T20:37:11.379-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-07T20:37:11.379-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-07T20:37:11.380-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-07T20:37:11.380-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-07T20:37:11.380-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-07T20:37:11.381-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-10-07T20:37:11.381-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-07T20:37:11.731-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-07T20:37:11.733-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-10-07T20:37:11.735-03:00  INFO 28424 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-10-07T20:37:11.740-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1696721831739 with initial instances count: 2
+2023-10-07T20:37:11.741-03:00  INFO 28424 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HERLANDIO7-CREDIT-ASSESSOR-SERVICE with eureka with status UP
+2023-10-07T20:37:11.742-03:00  INFO 28424 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1696721831742, current=UP, previous=STARTING]
+2023-10-07T20:37:11.744-03:00  INFO 28424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CREDIT-ASSESSOR-SERVICE/herlandio7-credit-assessor-service:23ed2be45e968fff70abd5ecbf3449e8: registering service...
+2023-10-07T20:37:11.858-03:00  INFO 28424 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HERLANDIO7-CREDIT-ASSESSOR-SERVICE/herlandio7-credit-assessor-service:23ed2be45e968fff70abd5ecbf3449e8 - registration status: 204
+2023-10-07T20:37:11.877-03:00  INFO 28424 --- [restartedMain] rlandio7CreditAssessorServiceApplication : Started Herlandio7CreditAssessorServiceApplication in 4.229 seconds (process running for 4.63)
+2023-10-07T20:42:11.391-03:00  INFO 28424 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
