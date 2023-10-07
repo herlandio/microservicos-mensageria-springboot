@@ -1,0 +1,62 @@
+2023-10-07T20:10:17.126-03:00  INFO 10896 --- [main] .h.Herlandio7CardServiceApplicationTests : Starting Herlandio7CardServiceApplicationTests using Java 17.0.7 with PID 10896 (started by STDAY in C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\modular-herlandio7\herlandio7-card-service)
+2023-10-07T20:10:17.134-03:00  INFO 10896 --- [main] .h.Herlandio7CardServiceApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T20:10:18.530-03:00  INFO 10896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T20:10:18.715-03:00  INFO 10896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 174 ms. Found 2 JPA repository interfaces.
+2023-10-07T20:10:19.036-03:00  INFO 10896 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=784b59c2-cf3e-3ecd-a4f8-40d83cd6ab3e
+2023-10-07T20:10:19.424-03:00  INFO 10896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T20:10:19.693-03:00  INFO 10896 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:4082f9f5-1cd0-41f6-8390-f87a3adf2a0b user=SA
+2023-10-07T20:10:19.695-03:00  INFO 10896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T20:10:19.756-03:00  INFO 10896 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T20:10:19.875-03:00  INFO 10896 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T20:10:19.880-03:00  INFO 10896 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T20:10:20.085-03:00  INFO 10896 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T20:10:20.243-03:00  INFO 10896 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T20:10:20.508-03:00  INFO 10896 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T20:10:21.094-03:00  INFO 10896 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T20:10:21.147-03:00  INFO 10896 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T20:10:21.891-03:00  WARN 10896 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-07T20:10:23.505-03:00  INFO 10896 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-07T20:10:23.555-03:00  WARN 10896 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-07T20:10:23.563-03:00  INFO 10896 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-10-07T20:10:23.711-03:00  INFO 10896 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [${RABBITMQ_HOST}:5672]
+2023-10-07T20:10:23.718-03:00  INFO 10896 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.UnknownHostException: Este host não é conhecido (${RABBITMQ_HOST})
+2023-10-07T20:10:23.729-03:00  INFO 10896 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [${RABBITMQ_HOST}:5672]
+2023-10-07T20:10:23.748-03:00  INFO 10896 --- [main] .h.Herlandio7CardServiceApplicationTests : Started Herlandio7CardServiceApplicationTests in 7.167 seconds (process running for 8.219)
+2023-10-07T20:10:24.379-03:00  INFO 10896 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-07T20:10:24.380-03:00  INFO 10896 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application HERLANDIO7-CARD-SERVICE with eureka with status DOWN
+2023-10-07T20:10:24.385-03:00  INFO 10896 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-10-07T20:10:24.385-03:00  INFO 10896 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-10-07T20:10:24.393-03:00  INFO 10896 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T20:10:24.398-03:00  INFO 10896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T20:10:24.401-03:00  INFO 10896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T20:13:28.502-03:00  INFO 12012 --- [main] .h.Herlandio7CardServiceApplicationTests : Starting Herlandio7CardServiceApplicationTests using Java 17.0.7 with PID 12012 (started by STDAY in C:\Users\STDAY\Downloads\microservicos-mensageria-springboot\modular-herlandio7\herlandio7-card-service)
+2023-10-07T20:13:28.505-03:00  INFO 12012 --- [main] .h.Herlandio7CardServiceApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T20:13:29.746-03:00  INFO 12012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T20:13:29.911-03:00  INFO 12012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms. Found 2 JPA repository interfaces.
+2023-10-07T20:13:30.203-03:00  INFO 12012 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=784b59c2-cf3e-3ecd-a4f8-40d83cd6ab3e
+2023-10-07T20:13:30.569-03:00  INFO 12012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T20:13:30.794-03:00  INFO 12012 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:7220d47c-cf1c-48e7-bbb8-8c2fc1238375 user=SA
+2023-10-07T20:13:30.796-03:00  INFO 12012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T20:13:30.849-03:00  INFO 12012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T20:13:30.929-03:00  INFO 12012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T20:13:30.933-03:00  INFO 12012 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T20:13:31.105-03:00  INFO 12012 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T20:13:31.251-03:00  INFO 12012 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T20:13:31.517-03:00  INFO 12012 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T20:13:32.061-03:00  INFO 12012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T20:13:32.115-03:00  INFO 12012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T20:13:32.791-03:00  WARN 12012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-07T20:13:34.217-03:00  INFO 12012 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-07T20:13:34.280-03:00  WARN 12012 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-07T20:13:34.292-03:00  INFO 12012 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2023-10-07T20:13:34.428-03:00  INFO 12012 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [${RABBITMQ_HOST}:5672]
+2023-10-07T20:13:34.433-03:00  INFO 12012 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.UnknownHostException: Este host não é conhecido (${RABBITMQ_HOST})
+2023-10-07T20:13:34.443-03:00  INFO 12012 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [${RABBITMQ_HOST}:5672]
+2023-10-07T20:13:34.464-03:00  INFO 12012 --- [main] .h.Herlandio7CardServiceApplicationTests : Started Herlandio7CardServiceApplicationTests in 6.434 seconds (process running for 7.477)
+2023-10-07T20:13:35.070-03:00  INFO 12012 --- [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-07T20:13:35.072-03:00  INFO 12012 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application HERLANDIO7-CARD-SERVICE with eureka with status DOWN
+2023-10-07T20:13:35.077-03:00  INFO 12012 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-10-07T20:13:35.078-03:00  INFO 12012 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-10-07T20:13:35.086-03:00  INFO 12012 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T20:13:35.092-03:00  INFO 12012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T20:13:35.095-03:00  INFO 12012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
