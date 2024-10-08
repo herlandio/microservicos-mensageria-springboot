@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>br.com</groupId>
 		<artifactId>modular-herlandio7</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath> <!-- aqui vai o pom principal do modulos -->
 	</parent>
 	<groupId>br.com</groupId>
 	<artifactId>herlandio7-card-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>herlandio7-card-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>

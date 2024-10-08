@@ -11,7 +11,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://${KEYCLOAK_SERVER}:${KEYCLOAK_PORT}/realms/herlandio7-realm
+          issuer-uri: http://localhost:8761/realms/herlandio7-realm
           
 server:
   port: 8080
@@ -21,4 +21,4 @@ eureka:
     fetch-registry: true #busca registro
     register-with-eureka: true #registra com eureka
     service-url:
-      defaultZone: http://eureka-user:123@${EUREKA_SERVER}:8761/eureka #rota do eureka
+      defaultZone: http://eureka-user:123@localhost:8761/eureka #rota do eureka

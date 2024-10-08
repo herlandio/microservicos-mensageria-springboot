@@ -12,7 +12,7 @@
 
 	<groupId>br.com</groupId>
 	<artifactId>modular-herlandio7</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging> <!-- somente no arquivo pai -->
 
 	<modules>
