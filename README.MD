@@ -1,4 +1,4 @@
-### API de avaliação de crédito
+### API de avaliação de cartão de crédito
 
 Aplicação modular com spring boot baseada em microserviços com utilização de rabbitmq para mensageria, keycloak para gerenciamento de identidades, eureka para descoberta de serviços, docker para dockerizacão e docker compose para gerenciar containers.
 
