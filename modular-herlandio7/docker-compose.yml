@@ -1,6 +1,7 @@
 services:
   rabbitmq:
     image: rabbitmq:3.12.6-management
+    restart: on-failure:3
     networks:
       - evaluation-network
     ports:
@@ -10,6 +11,7 @@ services:
   keycloak:
     image: quay.io/keycloak/keycloak:26.0.0
     command: start-dev
+    restart: on-failure:3
     environment:
       - KC_BOOTSTRAP_ADMIN_USERNAME=admin
       - KC_BOOTSTRAP_ADMIN_PASSWORD=admin
@@ -23,6 +25,7 @@ services:
       context: .
       dockerfile: ./herlandio7-eureka-server/Dockerfile
     image: h7-eureka-server:latest
+    restart: on-failure:3
     networks:
       - evaluation-network
     ports:
@@ -33,6 +36,7 @@ services:
       context: .
       dockerfile: ./herlandio7-cloud-gateway/Dockerfile
     image: h7-cloud-gateway:latest
+    restart: on-failure:3
     networks:
       - evaluation-network
     ports:
@@ -54,6 +58,7 @@ services:
       context: .
       dockerfile: ./herlandio7-client-service/Dockerfile
     image: h7-client-sv:latest
+    restart: on-failure:3
     networks:
       - evaluation-network
     environment:
@@ -69,6 +74,7 @@ services:
       context: .
       dockerfile: ./herlandio7-credit-assessor-service/Dockerfile
     image: h7-credit-assessor-sv:latest
+    restart: on-failure:3
     networks:
       - evaluation-network
     environment:
@@ -89,6 +95,7 @@ services:
       context: .
       dockerfile: ./herlandio7-card-service/Dockerfile
     image: h7-card-sv:latest
+    restart: on-failure:3
     networks:
       - evaluation-network
     environment:
