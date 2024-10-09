@@ -3,15 +3,15 @@ spring:
     name: herlandio7-credit-assessor-service
   rabbitmq:
     host: ${RABBITMQ_HOST}
-    port: 5672
-    username: guest
-    password: guest
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
 server:
   port: 0
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-user:123@8761:8761/eureka #o começo tem o login do eureka
+      defaultZone: http://${EUREKA_USERNAME}:${EUREKA_PASSWORD}@${EUREKA_SERVER}:${EUREKA_PORT}/eureka #o começo tem o login do eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}} #gera um nome especifico no eureka
 mq:

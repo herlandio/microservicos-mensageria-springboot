@@ -1,0 +1,111 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.12.6-management
+    networks:
+      - evaluation-network
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  keycloak:
+    image: quay.io/keycloak/keycloak
+    command: start-dev
+    environment:
+      - KC_BOOTSTRAP_ADMIN_USERNAME=admin
+      - KC_BOOTSTRAP_ADMIN_PASSWORD=admin
+    networks:
+      - evaluation-network
+    ports:
+      - "8081:8080"
+
+  eureka-server:
+    build:
+      context: .
+      dockerfile: ./herlandio7-eureka-server/Dockerfile
+    image: h7-eureka-server:latest
+    networks:
+      - evaluation-network
+    ports:
+      - "8761:8761"
+
+  herlandio7-cloud-gateway:
+    build:
+      context: .
+      dockerfile: ./herlandio7-cloud-gateway/Dockerfile
+    image: h7-cloud-gateway:latest
+    networks:
+      - evaluation-network
+    ports:
+      - "8080:8080"
+    environment:
+      - EUREKA_SERVER=eureka-server
+      - EUREKA_PORT=8761
+      - EUREKA_USERNAME=eureka-user
+      - EUREKA_PASSWORD=123
+      - KEYCLOAK_SERVER=keycloak
+      - KEYCLOAK_PORT=8080
+      - KEYCLOAK_REALM=herlandio7-realm
+    depends_on:
+      - keycloak
+      - eureka-server
+
+  herlandio7-client-service:
+    build:
+      context: .
+      dockerfile: ./herlandio7-client-service/Dockerfile
+    image: h7-client-sv:latest
+    networks:
+      - evaluation-network
+    environment:
+      - EUREKA_SERVER=eureka-server
+      - EUREKA_PORT=8761
+      - EUREKA_USERNAME=eureka-user
+      - EUREKA_PASSWORD=123
+    depends_on:
+      - eureka-server
+  
+  herlandio7-credit-assessor-service:
+    build:
+      context: .
+      dockerfile: ./herlandio7-credit-assessor-service/Dockerfile
+    image: h7-credit-assessor-sv:latest
+    networks:
+      - evaluation-network
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USERNAME=guest
+      - RABBITMQ_PASSWORD=guest
+      - EUREKA_SERVER=eureka-server
+      - EUREKA_PORT=8761
+      - EUREKA_USERNAME=eureka-user
+      - EUREKA_PASSWORD=123
+    depends_on:
+      - rabbitmq
+      - eureka-server
+
+  herlandio7-card-service:
+    build:
+      context: .
+      dockerfile: ./herlandio7-card-service/Dockerfile
+    image: h7-card-sv:latest
+    networks:
+      - evaluation-network
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USERNAME=guest
+      - RABBITMQ_PASSWORD=guest
+      - EUREKA_SERVER=eureka-server
+      - EUREKA_PORT=8761
+      - EUREKA_USERNAME=eureka-user
+      - EUREKA_PASSWORD=123
+    depends_on:
+      - rabbitmq
+      - eureka-server
+
+networks:
+  evaluation-network:
+    driver: bridge
